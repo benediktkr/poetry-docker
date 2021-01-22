@@ -1,12 +1,16 @@
-node {
-    stage "build container"
+pipeline {
+    agent any
+    stages {
+        stage('buid') {
+            steps {
+                sh 'docker build -t benediktkr/poetry:3.8 .'
+            }
+        }
 
-    sh "docker build -t benediktkr/poetry:latest ."
-
-    stage "push build"
-    sh "docker push benediktkr/poetry:latest"
-
-
-
-    archiveArtifacts artifacts: 'Dockerfile'
+        stage('push') {
+            steps {
+                sh 'docker push benediktkr/poetry:3.8'
+            }
+        }
+    }
 }
