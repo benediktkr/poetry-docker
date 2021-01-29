@@ -1,5 +1,6 @@
 # poetry-docker
 
-![build status](https://jenkins.sudo.is/buildStatus/icon?job=git.sudo.is%2Fpoetry-docker&style=flat-square)
+[![Build Status](https://jenkins.sudo.is/buildStatus/icon?job=ben%2Fpoetry-docker%2Fmaster&style=flat-square)](https://jenkins.sudo.is/job/ben/job/poetry-docker/job/master/)
+
 
 a (very simple) docker image with poetry installed, thats it..
