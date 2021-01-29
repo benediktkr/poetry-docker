@@ -1,7 +1,7 @@
 pipeline {
     agent any
     stages {
-        stage('buid') {
+        stage('build') {
             steps {
                 sh 'docker build -t benediktkr/poetry:3.8 .'
             }
