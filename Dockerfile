@@ -6,7 +6,8 @@ MAINTAINER Benedikt Kristinsson <benedikt@lokun.is>
 ENV DEBIAN_FRONTEND noninteractive
 ENV TZ Europe/Berlin
 
-RUN pip install poetry && poetry config virtualenvs.create false
+RUN python -m pip install -U pip \
+        && python -m pip install poetry
 
 ARG UID=1000
 RUN useradd -m -u ${UID} sudois && \
