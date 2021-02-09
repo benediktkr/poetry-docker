@@ -1,4 +1,4 @@
-ARG py3version=3.8
+ARG py3version=3.9
 FROM python:${py3version}
 
 MAINTAINER Benedikt Kristinsson <benedikt@lokun.is>
